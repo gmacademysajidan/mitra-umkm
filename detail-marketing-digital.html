@@ -25,7 +25,7 @@
         <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
         <li class="nav-item-dropdown">
           <a href="program.html" class="nav-link active dropdown-trigger">
-            Program <span>▾</span>
+            Program <span class="nav-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
           </a>
           <ul class="dropdown-menu">
             <li class="dropdown-item"><a href="detail-marketing-digital.html">1. Dasar Marketing Digital</a></li>
@@ -45,7 +45,7 @@
         <a href="daftar.html?program=marketing" class="btn btn-primary">Daftar Program</a>
       </div>
 
-      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
     </div>
   </header>
 
@@ -56,7 +56,7 @@
       <li><a href="tentang.html" class="mobile-nav-link">Tentang Kami</a></li>
       <li>
         <a href="program.html" class="mobile-nav-link mobile-dropdown-trigger">
-          Program <span>▾</span>
+          Program <span class="nav-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
         </a>
         <ul class="mobile-submenu">
           <li><a href="detail-marketing-digital.html">1. Dasar Marketing Digital</a></li>
@@ -172,11 +172,17 @@
             <h3 style="margin-bottom: 16px;">Jadwal & Metode Pelaksanaan</h3>
             <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
               <div style="background: var(--color-light-green-subtle); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--color-light-green);">
-                <strong style="color: var(--color-forest-green); display: block; margin-bottom: 4px;">📅 Format Pembelajaran</strong>
+                <strong style="color: var(--color-forest-green); display: flex; align-items: center; margin-bottom: 6px;">
+                  <span class="ui-pill-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                  Format Pembelajaran
+                </strong>
                 <p style="font-size: 0.875rem; margin: 0; color: var(--color-dark-text);">4 sesi webinar interaktif via Google Meet / Zoom setiap Sabtu & Minggu malam (19.30 – 21.00 WIB).</p>
               </div>
               <div style="background: var(--color-light-green-subtle); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--color-light-green);">
-                <strong style="color: var(--color-forest-green); display: block; margin-bottom: 4px;">📂 Materi & Rekaman Kelas</strong>
+                <strong style="color: var(--color-forest-green); display: flex; align-items: center; margin-bottom: 6px;">
+                  <span class="ui-pill-icon"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg></span>
+                  Materi & Rekaman Kelas
+                </strong>
                 <p style="font-size: 0.875rem; margin: 0; color: var(--color-dark-text);">Modul panduan format PDF dan rekaman sesi dapat ditonton ulang kapan saja di portal belajar.</p>
               </div>
             </div>
@@ -201,16 +207,16 @@
             
             <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; font-size: 0.875rem; color: var(--color-dark-text);">
               <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="color: var(--color-success); font-weight: bold;">✓</span> 100% Gratis Tanpa Biaya Tersembunyi
+                <span class="icon-check-badge"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span> 100% Gratis Tanpa Biaya Tersembunyi
               </div>
               <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="color: var(--color-success); font-weight: bold;">✓</span> E-Sertifikat Resmi Kelulusan
+                <span class="icon-check-badge"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span> E-Sertifikat Resmi Kelulusan
               </div>
               <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="color: var(--color-success); font-weight: bold;">✓</span> Grup WhatsApp Pendampingan Mentor
+                <span class="icon-check-badge"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Grup WhatsApp Pendampingan Mentor
               </div>
               <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="color: var(--color-success); font-weight: bold;">✓</span> Template Kalender Konten Siap Pakai
+                <span class="icon-check-badge"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Template Kalender Konten Siap Pakai
               </div>
             </div>
 
@@ -224,7 +230,7 @@
             <h4 style="margin-bottom: 8px;">Ada Pertanyaan seputar Program?</h4>
             <p style="font-size: 0.875rem; margin-bottom: 16px;">Tim sekretariat pendampingan siap membantu menjawab pertanyaan Anda.</p>
             <a href="https://wa.me/6281234567890?text=Halo%20Mitra%20UMKM,%20saya%20ingin%20bertanya%20tentang%20Program%20Dasar%20Marketing%20Digital" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-full">
-              💬 Tanya via WhatsApp
+              <span class="btn-icon-svg"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span> Tanya via WhatsApp
             </a>
           </div>
 

@@ -25,7 +25,7 @@
         <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
         <li class="nav-item-dropdown">
           <a href="program.html" class="nav-link active dropdown-trigger">
-            Program <span>▾</span>
+            Program <span class="nav-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
           </a>
           <ul class="dropdown-menu">
             <li class="dropdown-item"><a href="detail-marketing-digital.html">1. Dasar Marketing Digital</a></li>
@@ -45,7 +45,7 @@
         <a href="daftar.html" class="btn btn-primary">Daftar Program</a>
       </div>
 
-      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
     </div>
   </header>
 
@@ -56,7 +56,7 @@
       <li><a href="tentang.html" class="mobile-nav-link">Tentang Kami</a></li>
       <li>
         <a href="program.html" class="mobile-nav-link mobile-dropdown-trigger">
-          Program <span>▾</span>
+          Program <span class="nav-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
         </a>
         <ul class="mobile-submenu">
           <li><a href="detail-marketing-digital.html">1. Dasar Marketing Digital</a></li>
@@ -91,9 +91,9 @@
       </div>
 
       <!-- SEARCH BOX -->
-      <div class="search-box">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" class="search-input" placeholder="Cari program (contoh: WhatsApp, Foto Produk, Marketplace)...">
+      <div class="search-box" style="position: relative;">
+        <svg class="search-icon-svg" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Cari program (contoh: WhatsApp, Foto Produk, Marketplace)..." style="padding-left: 42px;">
       </div>
 
       <!-- CATEGORY CHIPS -->

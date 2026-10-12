@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = mobileDrawer.classList.contains('open');
       if (isOpen) {
         mobileDrawer.classList.remove('open');
-        mobileToggle.innerHTML = '☰';
+        mobileToggle.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>';
       } else {
         mobileDrawer.classList.add('open');
-        mobileToggle.innerHTML = '✕';
+        mobileToggle.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
       }
     });
   }
