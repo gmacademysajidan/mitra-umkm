@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma Design System — Mitra UMKM</title>
+  <meta name="description" content="Spesifikasi Design System Figma Mitra UMKM: Tokens, Colors, Typography Scale, Spacing Grid, Component Variants, and UI Specs.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; margin-top: 16px; }
+    .swatch { border-radius: 10px; overflow: hidden; border: 1px solid var(--color-light-border); background: white; }
+    .swatch-color { height: 80px; width: 100%; }
+    .swatch-body { padding: 12px; font-size: 0.875rem; }
+    .type-scale-row { display: flex; align-items: baseline; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid var(--color-light-border); }
+    .spec-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 0.875rem; }
+    .spec-table th, .spec-table td { padding: 10px 14px; border: 1px solid var(--color-light-border); text-align: left; }
+    .spec-table th { background: rgba(23, 76, 60, 0.06); font-family: var(--font-heading); color: var(--color-forest-green); }
+  </style>
+</head>
+<body class="page-light">
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/img/logo.png" alt="Mitra UMKM" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('logoFallbackNav').style.display='flex';">
+        <div class="brand-logo-fallback" id="logoFallbackNav">
+          <span class="brand-logo-icon">M</span>
+          <span>mitra umkm</span>
+        </div>
+      </a>
+
+      <div class="nav-cta">
+        <a href="index.html" class="btn btn-outline btn-sm">← Kembali ke Website</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      
+      <div class="section-header text-left">
+        <span class="badge">Spesifikasi UI/UX</span>
+        <h1 style="margin-top: 10px; margin-bottom: 12px;">Mitra UMKM Design System</h1>
+        <p>Standar komponen visual, token warna, hierarki tipografi, dan variabel Figma untuk Rekayasa Perangkat Lunak (RPL).</p>
+      </div>
+
+      <!-- 1. COLOR TOKENS -->
+      <section style="background: white; padding: 28px; border-radius: var(--radius-lg); border: 1px solid var(--color-light-border); margin-bottom: 24px;">
+        <h2>01. Color Palette Tokens</h2>
+        <p>Palet warna bersih, profesional, dan nyaman dibaca bagi pelaku usaha.</p>
+
+        <div class="swatch-grid">
+          <div class="swatch">
+            <div class="swatch-color" style="background-color: #0B1E19;"></div>
+            <div class="swatch-body">
+              <strong>Forest Dark Canvas</strong><br>
+              <code>#0B1E19</code><br>
+              <small>Index Canvas BG</small>
+            </div>
+          </div>
+
+          <div class="swatch">
+            <div class="swatch-color" style="background-color: #14362B;"></div>
+            <div class="swatch-body">
+              <strong>Forest Card Surface</strong><br>
+              <code>#14362B</code><br>
+              <small>Index Cards BG</small>
+            </div>
+          </div>
+
+          <div class="swatch">
+            <div class="swatch-color" style="background-color: #F5B84B;"></div>
+            <div class="swatch-body">
+              <strong>Warm Yellow Accent</strong><br>
+              <code>#F5B84B</code><br>
+              <small>Primary Buttons, Active Markers</small>
+            </div>
+          </div>
+
+          <div class="swatch">
+            <div class="swatch-color" style="background-color: #FFFFFF;"></div>
+            <div class="swatch-body">
+              <strong>White Text</strong><br>
+              <code>#FFFFFF</code><br>
+              <small>Primary Text on Index</small>
+            </div>
+          </div>
+
+          <div class="swatch">
+            <div class="swatch-color" style="background-color: #C8D4CD;"></div>
+            <div class="swatch-body">
+              <strong>Secondary Light Text</strong><br>
+              <code>#C8D4CD</code><br>
+              <small>Subtitles, Meta Text</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. TYPOGRAPHY SYSTEM -->
+      <section style="background: white; padding: 28px; border-radius: var(--radius-lg); border: 1px solid var(--color-light-border); margin-bottom: 24px;">
+        <h2>02. Typography Scale</h2>
+        <p>Plus Jakarta Sans untuk Headings; Inter untuk Isi Teks & Kontrol UI.</p>
+
+        <div style="margin-top: 20px;">
+          <div class="type-scale-row">
+            <div>
+              <span style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800;">Display H1 — Usaha Lokal Digital</span>
+            </div>
+            <code>Plus Jakarta Sans 36px / Bold</code>
+          </div>
+
+          <div class="type-scale-row">
+            <div>
+              <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700;">Section H2 — Katalog Program</span>
+            </div>
+            <code>Plus Jakarta Sans 28px / Bold</code>
+          </div>
+
+          <div class="type-scale-row">
+            <div>
+              <span style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600;">Card H3 — Dasar Marketing Digital</span>
+            </div>
+            <code>Plus Jakarta Sans 20px / SemiBold</code>
+          </div>
+
+          <div class="type-scale-row">
+            <div>
+              <span style="font-family: var(--font-body); font-size: 1rem; font-weight: 400;">Body Regular — Mitra UMKM hadir mendampingi pelaku usaha...</span>
+            </div>
+            <code>Inter 16px / Regular</code>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. COMPONENT VARIANTS MATRIX -->
+      <section style="background: white; padding: 28px; border-radius: var(--radius-lg); border: 1px solid var(--color-light-border); margin-bottom: 24px;">
+        <h2>03. Component Variants Matrix</h2>
+        <p>Varian tombol, masukan formulir, dan status pada Figma.</p>
+
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Komponen</th>
+              <th>Varian Primary</th>
+              <th>Varian Secondary / Outline</th>
+              <th>Interactive States</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Buttons</strong></td>
+              <td><button class="btn btn-primary btn-sm">Primary Action</button></td>
+              <td><button class="btn btn-outline btn-sm">Outline Action</button></td>
+              <td>Default, Hover, Active, Disabled</td>
+            </tr>
+            <tr>
+              <td><strong>Floating WA</strong></td>
+              <td><span style="background: #25D366; color: white; padding: 6px 12px; border-radius: 20px;">Floating WA (20px, 20px)</span></td>
+              <td>-</td>
+              <td>Fixed bottom right</td>
+            </tr>
+            <tr>
+              <td><strong>Floating Back to Top</strong></td>
+              <td><span style="background: #14362B; color: white; padding: 6px 12px; border-radius: 20px;">Floating Back to Top (82px, 20px)</span></td>
+              <td>Directly above WA button</td>
+              <td>Fixed bottom right (above WA)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 mitra umkm — Figma Design System Spec & Interactive UX Prototype</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran — Mitra UMKM</title>
+  <meta name="description" content="Formulir pendaftaran program pendampingan digital UMKM. Isi data usaha Anda dan bergabunglah secara gratis.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-light">
+
+  <!-- NAVBAR UTAMA -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo" id="nav-brand-logo">
+        <img src="assets/img/logo.png" alt="Mitra UMKM" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('logoFallbackNav').style.display='flex';">
+        <div class="brand-logo-fallback" id="logoFallbackNav">
+          <span class="brand-logo-icon">M</span>
+          <span>mitra umkm</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+        <li class="nav-item-dropdown">
+          <a href="program.html" class="nav-link dropdown-trigger">
+            Program <span>▾</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="detail-marketing-digital.html">1. Dasar Marketing Digital</a></li>
+            <li class="dropdown-item"><a href="detail-branding-konten.html">2. Fotografi Produk & Packaging</a></li>
+            <li class="dropdown-item"><a href="detail-pemasaran-online.html">3. Strategi Tokopedia & Shopee</a></li>
+            <li class="dropdown-item"><a href="detail-website-digital.html">4. Web Catalog & WA Business</a></li>
+            <li class="dropdown-item"><a href="detail-pengembangan-usaha.html">5. Manajemen Keuangan & QRIS</a></li>
+            <li class="dropdown-item" style="border-top: 1px solid var(--color-border); margin-top: 4px; padding-top: 4px;"><a href="program.html" style="color: var(--color-forest-green); font-weight: 600;">Lihat Semua Program →</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="alumni.html" class="nav-link">Alumni</a></li>
+        <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="daftar.html" class="btn btn-primary">Daftar Program</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Beranda</a></li>
+      <li><a href="tentang.html" class="mobile-nav-link">Tentang Kami</a></li>
+      <li><a href="program.html" class="mobile-nav-link">Program</a></li>
+      <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+      <li><a href="alumni.html" class="mobile-nav-link">Alumni</a></li>
+      <li><a href="kontak.html" class="mobile-nav-link">Kontak</a></li>
+    </ul>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      
+      <!-- BREADCRUMB -->
+      <div class="breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="program.html">Katalog Program</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Formulir Pendaftaran</span>
+      </div>
+
+      <div class="section-header">
+        <span class="badge">Formulir Pendaftaran</span>
+        <h2>Bergabung Dalam Pendampingan UMKM</h2>
+        <p>Isi formulir berikut. Data Anda digunakan untuk keperluan koordinasi program pendampingan.</p>
+      </div>
+
+      <!-- FORM CARD -->
+      <div class="form-card">
+        
+        <div class="alert alert-info">
+          Seluruh program pendampingan Mitra UMKM diselenggarakan gratis. Pastikan nomor WhatsApp aktif untuk menerima kabar jadwal sesi.
+        </div>
+
+        <form id="registrationForm" novalidate>
+          
+          <div class="form-group">
+            <label for="namaLengkap" class="form-label">Nama Lengkap <span class="required">*</span></label>
+            <input type="text" id="namaLengkap" class="form-control" placeholder="Contoh: Budi Santoso" autocomplete="name">
+            <div class="form-hint">Isi sesuai dengan nama penanggung jawab usaha.</div>
+            <div class="form-error-msg" id="errNamaLengkap" style="display:none;"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="namaUsaha" class="form-label">Nama Usaha / Brand <span class="required">*</span></label>
+            <input type="text" id="namaUsaha" class="form-control" placeholder="Contoh: Dapur Keripik Nusantara">
+            <div class="form-hint">Nama merek, toko, atau usaha yang Anda jalankan.</div>
+            <div class="form-error-msg" id="errNamaUsaha" style="display:none;"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="jenisUsaha" class="form-label">Jenis / Sektor Usaha <span class="required">*</span></label>
+            <select id="jenisUsaha" class="form-control">
+              <option value="">-- Pilih Jenis Usaha --</option>
+              <option value="kuliner">Kuliner, Makanan & Minuman</option>
+              <option value="fashion">Fashion & Pakaian</option>
+              <option value="kriya">Kerajinan Tangan & Kriya</option>
+              <option value="jasa">Jasa & Pelayanan Lokal</option>
+              <option value="pertanian">Pertanian & Agribisnis</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+            <div class="form-error-msg" id="errJenisUsaha" style="display:none;"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="noWhatsapp" class="form-label">Nomor WhatsApp Aktif <span class="required">*</span></label>
+            <input type="tel" id="noWhatsapp" class="form-control" placeholder="Contoh: 081234567890" autocomplete="tel">
+            <div class="form-hint">Pemberitahuan jadwal dan tautan kelas akan dikirim via WA.</div>
+            <div class="form-error-msg" id="errNoWhatsapp" style="display:none;"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="wilayahUsaha" class="form-label">Wilayah / Kota Lokasi Usaha <span class="required">*</span></label>
+            <input type="text" id="wilayahUsaha" class="form-control" placeholder="Contoh: Bandung, Jawa Barat">
+            <div class="form-error-msg" id="errWilayahUsaha" style="display:none;"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="programPilihan" class="form-label">Program Pilihan <span class="required">*</span></label>
+            <select id="programPilihan" class="form-control">
+              <option value="">-- Pilih Program Pendampingan --</option>
+              <option value="marketing" selected>Dasar Marketing Digital & Optimasi Social Media</option>
+              <option value="branding">Fotografi Produk & Packaging Estetis via HP</option>
+              <option value="marketplace">Strategi Penjualan Tokopedia & Shopee</option>
+              <option value="website">Pembuatan Web Catalog & Toko WhatsApp</option>
+              <option value="financial">Manajemen Keuangan & QRIS Pembayaran Digital</option>
+            </select>
+            <div class="form-error-msg" id="errProgramPilihan" style="display:none;"></div>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="persetujuan">
+            <label for="persetujuan">
+              Saya menyetujui pemrosesan data di atas untuk keperluan verifikasi dan komunikasi program pendampingan Mitra UMKM.
+            </label>
+          </div>
+          <div class="form-error-msg" id="errPersetujuan" style="display:none; margin-top: -12px; margin-bottom: 20px;"></div>
+
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-lg btn-full">Kirim Pendaftaran</button>
+        </form>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FLOATING BUTTONS -->
+  <button id="backToTopBtn" class="back-to-top-float" aria-label="Kembali ke Atas" title="Kembali ke atas">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <a href="https://wa.me/6281234567890?text=Halo%20Mitra%20UMKM,%20saya%20butuh%20bantuan%20mengisi%20formulir%20pendaftaran" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Hubungi WhatsApp Mitra UMKM">
+    <svg viewBox="0 0 32 32">
+      <path d="M16 2A13.93 13.93 0 0 0 3.82 22.8L2 29.42l6.83-1.79A13.93 13.93 0 1 0 16 2zm0 25.54a11.53 11.53 0 0 1-5.89-1.61l-.42-.25-4.37 1.15 1.17-4.26-.28-.44A11.57 11.57 0 1 1 16 27.54zm6.34-8.66c-.35-.17-2.06-1.02-2.38-1.13s-.55-.17-.79.17-.92 1.13-1.13 1.37-.42.27-.77.1A9.68 9.68 0 0 1 12 16.51a10.66 10.66 0 0 1-2.92-3.64c-.2-.35 0-.54.17-.71s.35-.41.53-.61a2.39 2.39 0 0 0 .35-.58.65.65 0 0 0 0-.62c-.09-.17-.79-1.9-1.08-2.61s-.58-.6-.79-.61h-.68a1.31 1.31 0 0 0-.95.44 3.99 3.99 0 0 0-1.25 2.97 6.94 6.94 0 0 0 1.45 3.68c.18.24 2.5 3.82 6.06 5.36a20.44 20.44 0 0 0 2 .74 4.8 4.8 0 0 0 2.21.14c.68-.1 2.06-.84 2.35-1.65a2.89 2.89 0 0 0 .2-1.65c-.08-.14-.3-.22-.65-.39z"/>
+    </svg>
+  </a>
+
+  <!-- FOOTER UTAMA -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: var(--color-white);">
+            <img src="assets/img/logo.png" alt="Mitra UMKM" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('logoFallbackFooter').style.display='flex';">
+            <div class="brand-logo-fallback" id="logoFallbackFooter">
+              <span class="brand-logo-icon">M</span>
+              <span>mitra umkm</span>
+            </div>
+          </a>
+          <p>Portal pendampingan digital UMKM Indonesia. Tumbuh bersama memperkuat daya saing usaha lokal melalui edukasi bisnis yang terstruktur.</p>
+        </div>
+
+        <div>
+          <h4>Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kategori Program</h4>
+          <ul class="footer-links">
+            <li><a href="program.html?cat=pelatihan">Pelatihan Digital</a></li>
+            <li><a href="program.html?cat=branding">Branding & Konten</a></li>
+            <li><a href="program.html?cat=pemasaran">Pemasaran Online</a></li>
+            <li><a href="program.html?cat=website">Website Bisnis</a></li>
+            <li><a href="program.html?cat=pengembangan">Pengembangan Usaha</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Hubungi Kami</h4>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem;">Sekretariat Pendampingan UMKM</p>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 8px;">Email: info@mitraumkm.id</p>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 4px;">WhatsApp: 0812-3456-7890</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 mitra umkm — Portal Pendampingan Digital UMKM Indonesia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Berhasil — Mitra UMKM</title>
+  <meta name="description" content="Konfirmasi pendaftaran program Mitra UMKM berhasil dikirim. Pelajari langkah selanjutnya untuk bergabung dalam sesi pendampingan.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-light">
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo" id="nav-brand-logo">
+        <img src="assets/img/logo.png" alt="Mitra UMKM" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('logoFallbackNav').style.display='flex';">
+        <div class="brand-logo-fallback" id="logoFallbackNav">
+          <span class="brand-logo-icon">M</span>
+          <span>mitra umkm</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container" style="max-width: 640px;">
+      
+      <div style="background: var(--color-light-card); border-radius: var(--radius-lg); border: 1px solid var(--color-light-border); padding: 40px 28px; text-align: center;">
+        
+        <span class="badge" style="margin-bottom: 12px;">Status: Terkirim</span>
+        <h1 style="font-size: 1.875rem; margin-bottom: 12px;">Pendaftaran Berhasil Dikirim!</h1>
+        <p style="font-size: 1rem; color: var(--color-light-secondary); margin-bottom: 32px;">
+          Terima kasih, <strong id="successRegistrant" style="color: var(--color-light-text);">Bapak/Ibu Pelaku UMKM</strong>. Permohonan pendaftaran Anda telah kami terima.
+        </p>
+
+        <!-- Program Summary Card -->
+        <div style="background: rgba(23, 76, 60, 0.06); border: 1px solid var(--color-light-border); padding: 20px; border-radius: var(--radius-md); text-align: left; margin-bottom: 32px;">
+          <span style="font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-forest-green); font-weight: 600; display: block; margin-bottom: 4px;">Program yang Dipilih:</span>
+          <h3 id="successProgName" style="color: var(--color-light-text); font-size: 1.125rem;">Dasar Marketing Digital & Optimasi Social Media</h3>
+        </div>
+
+        <!-- Next Steps Timeline -->
+        <div style="text-align: left; margin-bottom: 40px;">
+          <h3 style="font-size: 1.0625rem; margin-bottom: 16px;">Langkah Selanjutnya:</h3>
+          
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <span style="width: 26px; height: 26px; background: var(--color-forest-green); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8125rem; font-weight: 700; flex-shrink: 0;">1</span>
+              <div>
+                <strong style="color: var(--color-light-text); font-size: 0.9375rem;">Verifikasi Data Usaha</strong>
+                <p style="font-size: 0.875rem; color: var(--color-light-secondary); margin-top: 2px;">Tim pendamping akan mengecek kelengkapan data pendaftaran Anda dalam 1x24 jam kerja.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <span style="width: 26px; height: 26px; background: var(--color-forest-green); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8125rem; font-weight: 700; flex-shrink: 0;">2</span>
+              <div>
+                <strong style="color: var(--color-light-text); font-size: 0.9375rem;">Konfirmasi WhatsApp & Modul</strong>
+                <p style="font-size: 0.875rem; color: var(--color-light-secondary); margin-top: 2px;">Anda akan menerima pesan WhatsApp yang berisi pranala sesi online dan bahan panduan awal.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <span style="width: 26px; height: 26px; background: var(--color-forest-green); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8125rem; font-weight: 700; flex-shrink: 0;">3</span>
+              <div>
+                <strong style="color: var(--color-light-text); font-size: 0.9375rem;">Pelaksanaan Sesi Pendampingan</strong>
+                <p style="font-size: 0.875rem; color: var(--color-light-secondary); margin-top: 2px;">Ikuti sesi online interaktif dan terapkan materi pada usaha Anda.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+          <a href="index.html" class="btn btn-primary">Kembali ke Beranda</a>
+          <a href="program.html" class="btn btn-outline">Lihat Program Lainnya</a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FLOATING BUTTONS -->
+  <button id="backToTopBtn" class="back-to-top-float" aria-label="Kembali ke Atas" title="Kembali ke atas">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <a href="https://wa.me/6281234567890?text=Halo%20Mitra%20UMKM,%20saya%20sudah%20mendaftar%20program" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Hubungi WhatsApp Mitra UMKM">
+    <svg viewBox="0 0 32 32">
+      <path d="M16 2A13.93 13.93 0 0 0 3.82 22.8L2 29.42l6.83-1.79A13.93 13.93 0 1 0 16 2zm0 25.54a11.53 11.53 0 0 1-5.89-1.61l-.42-.25-4.37 1.15 1.17-4.26-.28-.44A11.57 11.57 0 1 1 16 27.54zm6.34-8.66c-.35-.17-2.06-1.02-2.38-1.13s-.55-.17-.79.17-.92 1.13-1.13 1.37-.42.27-.77.1A9.68 9.68 0 0 1 12 16.51a10.66 10.66 0 0 1-2.92-3.64c-.2-.35 0-.54.17-.71s.35-.41.53-.61a2.39 2.39 0 0 0 .35-.58.65.65 0 0 0 0-.62c-.09-.17-.79-1.9-1.08-2.61s-.58-.6-.79-.61h-.68a1.31 1.31 0 0 0-.95.44 3.99 3.99 0 0 0-1.25 2.97 6.94 6.94 0 0 0 1.45 3.68c.18.24 2.5 3.82 6.06 5.36a20.44 20.44 0 0 0 2 .74 4.8 4.8 0 0 0 2.21.14c.68-.1 2.06-.84 2.35-1.65a2.89 2.89 0 0 0 .2-1.65c-.08-.14-.3-.22-.65-.39z"/>
+    </svg>
+  </a>
+
+  <!-- FOOTER UTAMA -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 mitra umkm — Portal Pendampingan Digital UMKM Indonesia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

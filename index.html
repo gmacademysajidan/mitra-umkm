@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitra UMKM — Tumbuh Bersama, Go Digital</title>
+  <meta name="description" content="Mitra UMKM adalah portal pendampingan digital yang membantu pelaku UMKM Indonesia meningkatkan pemahaman serta kemampuan digital melalui informasi, edukasi, dan program pendampingan.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR UTAMA -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      
+      <!-- LOGO NAVBAR (Slot Gambar / Fallback Teks Mitra UMKM) -->
+      <a href="index.html" class="brand-logo" id="nav-brand-logo">
+        <img src="assets/img/logo.png" alt="Mitra UMKM" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('logoFallbackNav').style.display='flex';">
+        <div class="brand-logo-fallback" id="logoFallbackNav">
+          <span class="brand-logo-icon">M</span>
+          <span>mitra umkm</span>
+        </div>
+      </a>
+
+      <!-- MENU NAVBAR -->
+      <ul class="nav-links" id="desktopNavLinks">
+        <li><a href="index.html" class="nav-link active">Beranda</a></li>
+        <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+        <li class="nav-item-dropdown">
+          <a href="program.html" class="nav-link dropdown-trigger">
+            Program <span>▾</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="detail-marketing-digital.html">1. Dasar Marketing Digital</a></li>
+            <li class="dropdown-item"><a href="detail-branding-konten.html">2. Fotografi Produk & Packaging</a></li>
+            <li class="dropdown-item"><a href="detail-pemasaran-online.html">3. Strategi Tokopedia & Shopee</a></li>
+            <li class="dropdown-item"><a href="detail-website-digital.html">4. Web Catalog & WA Business</a></li>
+            <li class="dropdown-item"><a href="detail-pengembangan-usaha.html">5. Manajemen Keuangan & QRIS</a></li>
+            <li class="dropdown-item" style="border-top: 1px solid var(--color-border); margin-top: 4px; padding-top: 4px;"><a href="program.html" style="color: var(--color-forest-green); font-weight: 600;">Lihat Semua Program →</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="alumni.html" class="nav-link">Alumni</a></li>
+        <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="daftar.html" class="btn btn-primary" id="navCtaBtn">Daftar Program</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi">☰</button>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER NAVIGASI -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Beranda</a></li>
+      <li><a href="tentang.html" class="mobile-nav-link">Tentang Kami</a></li>
+      <li>
+        <a href="program.html" class="mobile-nav-link mobile-dropdown-trigger">
+          Program <span>▾</span>
+        </a>
+        <ul class="mobile-submenu" style="display: none;">
+          <li><a href="detail-marketing-digital.html">1. Dasar Marketing Digital</a></li>
+          <li><a href="detail-branding-konten.html">2. Fotografi Produk & Packaging</a></li>
+          <li><a href="detail-pemasaran-online.html">3. Strategi Tokopedia & Shopee</a></li>
+          <li><a href="detail-website-digital.html">4. Web Catalog & WA Business</a></li>
+          <li><a href="detail-pengembangan-usaha.html">5. Manajemen Keuangan & QRIS</a></li>
+          <li><a href="program.html">Katalog Lengkap Program</a></li>
+        </ul>
+      </li>
+      <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+      <li><a href="alumni.html" class="mobile-nav-link">Alumni</a></li>
+      <li><a href="kontak.html" class="mobile-nav-link">Kontak</a></li>
+    </ul>
+    <div style="margin-top: 24px;">
+      <a href="daftar.html" class="btn btn-primary btn-full">Daftar Program Sekarang</a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT BERANDA (TANPA BREADCRUMB) -->
+  <main>
+    
+    <!-- 1. HERO BANNER DEPT WITH CTA BUTTONS & HERO PHOTO CARD -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge badge-yellow">Program Pendampingan Digital</span>
+          <h1>Saatnya Usaha Lokal Tumbuh Secara Digital.</h1>
+          <p>Mitra UMKM adalah portal pendampingan digital yang membantu pelaku usaha mikro, kecil, dan menengah meningkatkan pemahaman serta kemampuan digital melalui informasi, edukasi, dan program pendampingan.</p>
+          
+          <div class="hero-actions">
+            <a href="program.html" class="btn btn-primary btn-lg" id="heroPrimaryCta">Jelajahi Program</a>
+            <a href="kontak.html" class="btn btn-outline btn-lg" id="heroSecondaryCta">Pelajari Selengkapnya</a>
+          </div>
+
+          <!-- Highlight Stats Strip -->
+          <div class="hero-stats-strip">
+            <div>
+              <span class="stat-item-num">5 Kategori</span>
+              <span class="stat-item-label">Modul Pendampingan</span>
+            </div>
+            <div>
+              <span class="stat-item-num">100% Gratis</span>
+              <span class="stat-item-label">Inisiatif Edukasi</span>
+            </div>
+            <div>
+              <span class="stat-item-num">Online</span>
+              <span class="stat-item-label">Sesi Pendampingan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLOT CARD FOTO HERO (Bisa Diganti Foto Sendiri) -->
+        <div class="hero-visual">
+          <div class="photo-card-slot">
+            <span class="photo-card-badge-hint">Slot Foto Utama</span>
+            <img src="assets/img/hero-umkm.png" alt="Pelaku UMKM mengelola toko online secara digital" class="photo-card-img" style="height: 380px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. KATEGORI PROGRAM ("Mulai Digitalisasi dari Sini") -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Kategori Utama</span>
+          <h2>Mulai Digitalisasi dari Sini</h2>
+          <p>Temukan modul pendampingan digital yang paling sesuai dengan kebutuhan usaha Anda saat ini.</p>
+        </div>
+
+        <div class="category-grid-container">
+          
+          <!-- Baris Atas (3 Card) -->
+          <div class="category-grid-top">
+            <div class="category-card">
+              <div>
+                <div class="category-card-number">Modul 01</div>
+                <h3>Pelatihan Digital</h3>
+                <p>Pembekalan dasar ekosistem bisnis online, pengelolaan media sosial, dan teknik pemanfaatan perangkat digital usaha.</p>
+              </div>
+              <a href="detail-marketing-digital.html" class="category-card-link">Lihat Detail Modul →</a>
+            </div>
+
+            <div class="category-card">
+              <div>
+                <div class="category-card-number">Modul 02</div>
+                <h3>Branding & Konten Produk</h3>
+                <p>Panduan praktis mengambil foto produk yang rapi, identitas visual brand, dan teknik penyusunan deskripsi jualan.</p>
+              </div>
+              <a href="detail-branding-konten.html" class="category-card-link">Lihat Detail Modul →</a>
+            </div>
+
+            <div class="category-card">
+              <div>
+                <div class="category-card-number">Modul 03</div>
+                <h3>Pemasaran & Penjualan Online</h3>
+                <p>Optimasi toko di marketplace Tokopedia & Shopee serta teknik komunikasi promosi via WhatsApp Business.</p>
+              </div>
+              <a href="detail-pemasaran-online.html" class="category-card-link">Lihat Detail Modul →</a>
+            </div>
+          </div>
+
+          <!-- Baris Bawah (2 Card Posisi Tengah) -->
+          <div class="category-grid-bottom">
+            <div class="category-card">
+              <div>
+                <div class="category-card-number">Modul 04</div>
+                <h3>Website & Digitalisasi Bisnis</h3>
+                <p>Pembuatan halaman web katalog produk interaktif yang terhubung langsung ke kontak pemesanan toko.</p>
+              </div>
+              <a href="detail-website-digital.html" class="category-card-link">Lihat Detail Modul →</a>
+            </div>
+
+            <div class="category-card">
+              <div>
+                <div class="category-card-number">Modul 05</div>
+                <h3>Pengembangan Usaha</h3>
+                <p>Pencatatan keuangan digital sederhana dan penerapan pembayaran QRIS untuk mempermudah transaksi usaha.</p>
+              </div>
+              <a href="detail-pengembangan-usaha.html" class="category-card-link">Lihat Detail Modul →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. KARTU DOKUMENTASI FOTO KEGIATAN (SLOT FOTO PASANG SENDIRI) -->
+    <section class="section" style="background-color: var(--color-white); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Dokumentasi</span>
+          <h2>Galeri Pendampingan UMKM</h2>
+          <p>Potret kegiatan sesi pendampingan dan aktivitas pelaku usaha lokal yang bergabung bersama Mitra UMKM.</p>
+        </div>
+
+        <div class="photo-grid">
+          
+          <!-- Photo Card Slot 1 (Bisa Pasang Foto Sendiri) -->
+          <div class="photo-card-slot">
+            <span class="photo-card-badge-hint">Slot Foto 01</span>
+            <img src="assets/img/galeri-pelatihan.png" alt="Sesi Pelatihan Digital UMKM" class="photo-card-img">
+            <div class="photo-card-caption">
+              <div class="photo-card-title">Sesi Pelatihan Interaktif</div>
+              <p class="photo-card-desc">Suasana bimbingan strategi konten dan media sosial bersama para pemilik usaha.</p>
+            </div>
+          </div>
+
+          <!-- Photo Card Slot 2 (Bisa Pasang Foto Sendiri) -->
+          <div class="photo-card-slot">
+            <span class="photo-card-badge-hint">Slot Foto 02</span>
+            <img src="assets/img/galeri-workshop.png" alt="Workshop Foto Produk" class="photo-card-img">
+            <div class="photo-card-caption">
+              <div class="photo-card-title">Workshop Foto Produk</div>
+              <p class="photo-card-desc">Praktik pengambilan foto produk makanan dan kriya menggunakan kamera smartphone.</p>
+            </div>
+          </div>
+
+          <!-- Photo Card Slot 3 (Bisa Pasang Foto Sendiri) -->
+          <div class="photo-card-slot">
+            <span class="photo-card-badge-hint">Slot Foto 03</span>
+            <img src="assets/img/galeri-toko.png" alt="Pendampingan Toko Digital" class="photo-card-img">
+            <div class="photo-card-caption">
+              <div class="photo-card-title">Pengelolaan Toko Digital</div>
+              <p class="photo-card-desc">Bimbingan pembuatan katalog produk dan WhatsApp Business untuk pemasaran online.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROGRAM UNGGULAN -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Program Pilihan</span>
+          <h2>Program Pendampingan Popular</h2>
+          <p>Modul pendampingan terstruktur yang dirancang praktis dan ramah bagi pelaku usaha pemula.</p>
+        </div>
+
+        <div class="card-grid">
+          
+          <div class="program-card">
+            <div class="program-card-thumb">
+              <img src="assets/img/program-marketing.png" alt="Sesi Pelatihan Digital Marketing">
+              <div class="program-card-badge">
+                <span class="badge badge-yellow">Pelatihan Digital</span>
+              </div>
+            </div>
+            <div class="program-card-body">
+              <h3>Dasar Marketing Digital & Optimasi Social Media</h3>
+              <p>Panduan langkah demi langkah merancang strategi konten Instagram & TikTok untuk menarik pelanggan potensial.</p>
+              <div class="program-card-meta">
+                <span>4 Sesi Online</span>
+                <span>Tingkat Pemula</span>
+              </div>
+              <a href="detail-marketing-digital.html" class="btn btn-outline btn-full">Lihat Detail Program</a>
+            </div>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card-thumb">
+              <img src="assets/img/program-branding.png" alt="Sesi Foto Produk & Branding">
+              <div class="program-card-badge">
+                <span class="badge badge-yellow">Branding & Konten</span>
+              </div>
+            </div>
+            <div class="program-card-body">
+              <h3>Fotografi Produk & Packaging Estetis via HP</h3>
+              <p>Pelajari teknik mengambil foto produk yang rapi hanya menggunakan smartphone dan pencahayaan alami rumahan.</p>
+              <div class="program-card-meta">
+                <span>2 Hari Workshop</span>
+                <span>Semua Tingkat</span>
+              </div>
+              <a href="detail-branding-konten.html" class="btn btn-outline btn-full">Lihat Detail Program</a>
+            </div>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card-thumb">
+              <img src="assets/img/program-website.png" alt="Website & Toko Online UMKM">
+              <div class="program-card-badge">
+                <span class="badge badge-yellow">Website & Digital</span>
+              </div>
+            </div>
+            <div class="program-card-body">
+              <h3>Pembuatan Web Catalog & Toko WhatsApp</h3>
+              <p>Miliki halaman web katalog produk praktis yang terhubung langsung ke WhatsApp tanpa biaya server mahal.</p>
+              <div class="program-card-meta">
+                <span>3 Sesi Pendampingan</span>
+                <span>Siap Go Digital</span>
+              </div>
+              <a href="detail-website-digital.html" class="btn btn-outline btn-full">Lihat Detail Program</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="program.html" class="btn btn-secondary btn-lg">Lihat Semua Katalog Program →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ALUR MENGIKUTI PROGRAM -->
+    <section class="section" style="background-color: var(--color-white); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Alur Bergabung</span>
+          <h2>Empat Langkah Mudah Mengikuti Pendampingan</h2>
+          <p>Proses sederhana untuk memulai perjalanan pengembangan digital usaha Anda.</p>
+        </div>
+
+        <div class="step-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h4>Pilih Program</h4>
+            <p>Jelajahi katalog program sesuai prioritas pengembangan bisnis Anda saat ini.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h4>Isi Formulir</h4>
+            <p>Lengkapi data usaha sederhana tanpa biaya atau persyaratan rumit.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h4>Konfirmasi WA</h4>
+            <p>Tim pendamping akan menghubungi Anda via WhatsApp untuk jadwal sesi.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h4>Mulai Belajar</h4>
+            <p>Ikuti sesi pendampingan dan terapkan hasilnya langsung pada usaha Anda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BLOG TERBARU -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Edukasi Bisnis</span>
+          <h2>Artikel Blog & Panduan Digital Terbaru</h2>
+          <p>Bacaan informatif yang menyajikan tips praktis seputar pemasaran dan pengelolaan usaha lokal.</p>
+        </div>
+
+        <div class="card-grid">
+          <div class="program-card">
+            <div class="program-card-thumb">
+              <img src="assets/img/blog-copywriting.png" alt="Panduan Copywriting">
+            </div>
+            <div class="program-card-body">
+              <span class="badge" style="width: fit-content; margin-bottom: 12px;">Digital Marketing</span>
+              <h3>5 Cara Membuat Deskripsi Produk yang Memikat Pembeli</h3>
+              <p>Pelajari teknik menulis deskripsi produk yang berfokus pada manfaat utama bagi pelanggan.</p>
+              <div style="font-size: 0.8125rem; color: var(--color-secondary-text); border-top: 1px solid var(--color-border); padding-top: 12px; margin-top: auto;">
+                10 Oktober 2026
+              </div>
+            </div>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card-thumb">
+              <img src="assets/img/blog-foto-produk.png" alt="Foto Produk HP">
+            </div>
+            <div class="program-card-body">
+              <span class="badge" style="width: fit-content; margin-bottom: 12px;">Branding</span>
+              <h3>Tips Pencahayaan Alami untuk Foto Produk Rumahan</h3>
+              <p>Gunakan pencahayaan jendela dan alat sederhana untuk menghasilkan foto produk yang bersih.</p>
+              <div style="font-size: 0.8125rem; color: var(--color-secondary-text); border-top: 1px solid var(--color-border); padding-top: 12px; margin-top: auto;">
+                08 Oktober 2026
+              </div>
+            </div>
+          </div>
+
+          <div class="program-card">
+            <div class="program-card-thumb">
+              <img src="assets/img/blog-whatsapp.png" alt="WhatsApp Business">
+            </div>
+            <div class="program-card-body">
+              <span class="badge" style="width: fit-content; margin-bottom: 12px;">Marketplace</span>
+              <h3>Fitur WhatsApp Business yang Membantu Pengelolaan Toko</h3>
+              <p>Mulai dari label pelanggan hingga katalog produk otomatis untuk mempermudah transaksi.</p>
+              <div style="font-size: 0.8125rem; color: var(--color-secondary-text); border-top: 1px solid var(--color-border); padding-top: 12px; margin-top: auto;">
+                05 Oktober 2026
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 44px;">
+          <a href="blog.html" class="btn btn-outline">Lihat Seluruh Artikel Blog →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ RINGKAS (TANPA TOMBOL FAQ LENGKAP) -->
+    <section class="section" style="background-color: var(--color-white); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">FAQ</span>
+          <h2>Pertanyaan Ringkas</h2>
+          <p>Jawaban cepat untuk pertanyaan seputar program dan alur pendampingan Mitra UMKM.</p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item active">
+            <div class="accordion-header">
+              <span>Apa itu portal Mitra UMKM?</span>
+              <span class="accordion-icon">▾</span>
+            </div>
+            <div class="accordion-body">
+              Mitra UMKM adalah portal pendampingan digital konseptual yang dirancang untuk membantu pelaku usaha mikro, kecil, dan menengah mempelajari teknik pemasaran online, branding, serta manajemen bisnis digital secara praktis.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span>Siapa saja yang boleh mendaftar program?</span>
+              <span class="accordion-icon">▾</span>
+            </div>
+            <div class="accordion-body">
+              Seluruh pemilik UMKM, perajin, pemilik warung, pelaku usaha kuliner, fashion, kriya, maupun pemula yang baru merintis bisnis di seluruh Indonesia diperbolehkan untuk ikut bergabung.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span>Apakah pendaftaran program dipungut biaya?</span>
+              <span class="accordion-icon">▾</span>
+            </div>
+            <div class="accordion-body">
+              Seluruh informasi dan program pendampingan dasar di portal Mitra UMKM disajikan secara gratis tanpa dipungut biaya apapun.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CTA BANNER CARD TERPISAH (WARNA HIJAU FOREST GREEN #174C3C) -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-card">
+          <span class="badge" style="background-color: rgba(255,255,255,0.18); color: var(--color-white); margin-bottom: 16px;">Mulai Sekarang</span>
+          <h2>Bawa Usaha Lokal Anda Go Digital Hari Ini.</h2>
+          <p>Dapatkan pendampingan praktis, modul ringkas, dan pengalaman belajar yang ramah bagi pengembangan usaha Anda.</p>
+          <a href="daftar.html" class="btn btn-secondary btn-lg" style="background-color: var(--color-light-green); color: var(--color-forest-green); font-weight: 700;">Daftar Program Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FLOATING BACK TO TOP BUTTON (MELAYANG DI ATAS WHATSAPP) -->
+  <button id="backToTopBtn" class="back-to-top-float" aria-label="Kembali ke Atas" title="Kembali ke atas">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- FLOATING WHATSAPP BUTTON (MELAYANG DI POJOK KANAN BAWAH) -->
+  <a href="https://wa.me/6281234567890?text=Halo%20Mitra%20UMKM,%20saya%20ingin%20bertanya%20seputar%20program%20pendampingan" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Hubungi WhatsApp Mitra UMKM" title="Hubungi Kami via WhatsApp">
+    <svg viewBox="0 0 32 32">
+      <path d="M16 2A13.93 13.93 0 0 0 3.82 22.8L2 29.42l6.83-1.79A13.93 13.93 0 1 0 16 2zm0 25.54a11.53 11.53 0 0 1-5.89-1.61l-.42-.25-4.37 1.15 1.17-4.26-.28-.44A11.57 11.57 0 1 1 16 27.54zm6.34-8.66c-.35-.17-2.06-1.02-2.38-1.13s-.55-.17-.79.17-.92 1.13-1.13 1.37-.42.27-.77.1A9.68 9.68 0 0 1 12 16.51a10.66 10.66 0 0 1-2.92-3.64c-.2-.35 0-.54.17-.71s.35-.41.53-.61a2.39 2.39 0 0 0 .35-.58.65.65 0 0 0 0-.62c-.09-.17-.79-1.9-1.08-2.61s-.58-.6-.79-.61h-.68a1.31 1.31 0 0 0-.95.44 3.99 3.99 0 0 0-1.25 2.97 6.94 6.94 0 0 0 1.45 3.68c.18.24 2.5 3.82 6.06 5.36a20.44 20.44 0 0 0 2 .74 4.8 4.8 0 0 0 2.21.14c.68-.1 2.06-.84 2.35-1.65a2.89 2.89 0 0 0 .2-1.65c-.08-.14-.3-.22-.65-.39z"/>
+    </svg>
+  </a>
+
+  <!-- FOOTER UTAMA -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: var(--color-white);">
+            <img src="assets/img/logo.png" alt="Mitra UMKM" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('logoFallbackFooter').style.display='flex';">
+            <div class="brand-logo-fallback" id="logoFallbackFooter">
+              <span class="brand-logo-icon">M</span>
+              <span>mitra umkm</span>
+            </div>
+          </a>
+          <p>Portal pendampingan digital UMKM Indonesia. Tumbuh bersama memperkuat daya saing usaha lokal melalui edukasi bisnis yang terstruktur.</p>
+        </div>
+
+        <div>
+          <h4>Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kategori Program</h4>
+          <ul class="footer-links">
+            <li><a href="program.html?cat=pelatihan">Pelatihan Digital</a></li>
+            <li><a href="program.html?cat=branding">Branding & Konten</a></li>
+            <li><a href="program.html?cat=pemasaran">Pemasaran Online</a></li>
+            <li><a href="program.html?cat=website">Website Bisnis</a></li>
+            <li><a href="program.html?cat=pengembangan">Pengembangan Usaha</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Hubungi Kami</h4>
+          <p style="color: rgba(255,255,255,0.75); font-size: 0.875rem;">Sekretariat Pendampingan UMKM</p>
+          <p style="color: rgba(255,255,255,0.75); font-size: 0.875rem; margin-top: 8px;">Email: info@mitraumkm.id</p>
+          <p style="color: rgba(255,255,255,0.75); font-size: 0.875rem; margin-top: 4px;">WhatsApp: 0812-3456-7890</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 mitra umkm — Portal Pendampingan Digital UMKM Indonesia.</p>
+        <div>
+          <a href="#" style="color: rgba(255,255,255,0.6); margin-right: 16px;">Kebijakan Privasi</a>
+          <a href="#" style="color: rgba(255,255,255,0.6);">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

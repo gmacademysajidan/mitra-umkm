@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami — Mitra UMKM</title>
+  <meta name="description" content="Hubungi tim pendamping Mitra UMKM. Kirim pertanyaan atau konsultasi seputar pendaftaran program pendampingan digital.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-light">
+
+  <!-- NAVBAR UTAMA -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo" id="nav-brand-logo">
+        <img src="assets/img/logo.png" alt="Mitra UMKM" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('logoFallbackNav').style.display='flex';">
+        <div class="brand-logo-fallback" id="logoFallbackNav">
+          <span class="brand-logo-icon">M</span>
+          <span>mitra umkm</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+        <li class="nav-item-dropdown">
+          <a href="program.html" class="nav-link dropdown-trigger">
+            Program <span>▾</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="detail-marketing-digital.html">1. Dasar Marketing Digital</a></li>
+            <li class="dropdown-item"><a href="detail-branding-konten.html">2. Fotografi Produk & Packaging</a></li>
+            <li class="dropdown-item"><a href="detail-pemasaran-online.html">3. Strategi Tokopedia & Shopee</a></li>
+            <li class="dropdown-item"><a href="detail-website-digital.html">4. Web Catalog & WA Business</a></li>
+            <li class="dropdown-item"><a href="detail-pengembangan-usaha.html">5. Manajemen Keuangan & QRIS</a></li>
+            <li class="dropdown-item" style="border-top: 1px solid var(--color-border); margin-top: 4px; padding-top: 4px;"><a href="program.html" style="color: var(--color-forest-green); font-weight: 600;">Lihat Semua Program →</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="alumni.html" class="nav-link">Alumni</a></li>
+        <li><a href="kontak.html" class="nav-link active">Kontak</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="daftar.html" class="btn btn-primary">Daftar Program</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Beranda</a></li>
+      <li><a href="tentang.html" class="mobile-nav-link">Tentang Kami</a></li>
+      <li>
+        <a href="program.html" class="mobile-nav-link mobile-dropdown-trigger">
+          Program <span>▾</span>
+        </a>
+        <ul class="mobile-submenu">
+          <li><a href="detail-marketing-digital.html">1. Dasar Marketing Digital</a></li>
+          <li><a href="detail-branding-konten.html">2. Fotografi Produk & Packaging</a></li>
+          <li><a href="detail-pemasaran-online.html">3. Strategi Tokopedia & Shopee</a></li>
+          <li><a href="detail-website-digital.html">4. Web Catalog & WA Business</a></li>
+          <li><a href="detail-pengembangan-usaha.html">5. Manajemen Keuangan & QRIS</a></li>
+          <li><a href="program.html">Katalog Lengkap Program</a></li>
+        </ul>
+      </li>
+      <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+      <li><a href="alumni.html" class="mobile-nav-link">Alumni</a></li>
+      <li><a href="kontak.html" class="mobile-nav-link">Kontak</a></li>
+    </ul>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      
+      <!-- BREADCRUMB -->
+      <div class="breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Kontak</span>
+      </div>
+
+      <div class="section-header text-left">
+        <span class="badge">Hubungi Kami</span>
+        <h1 style="margin-top: 10px; margin-bottom: 12px;">Kontak Pendampingan Mitra UMKM</h1>
+        <p>Ada pertanyaan seputar pendaftaran atau butuh informasi program pendampingan? Kirim pesan atau hubungi kami via WhatsApp.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 40px;" class="contact-grid">
+        
+        <!-- Form Kontak -->
+        <div class="form-card" style="margin: 0;">
+          <h3 style="margin-bottom: 16px;">Kirim Pesan Pertanyaan</h3>
+          <form id="contactForm" onsubmit="alert('Pesan Anda berhasil dikirim! Tim kami akan menghubungi Anda.'); return false;">
+            <div class="form-group">
+              <label for="namaKontak" class="form-label">Nama Lengkap <span class="required">*</span></label>
+              <input type="text" id="namaKontak" class="form-control" placeholder="Contoh: Budi Santoso" required>
+            </div>
+
+            <div class="form-group">
+              <label for="emailKontak" class="form-label">Alamat Email / WhatsApp <span class="required">*</span></label>
+              <input type="text" id="emailKontak" class="form-control" placeholder="Contoh: 081234567890 / email@domain.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subjekKontak" class="form-label">Subjek Pertanyaan</label>
+              <input type="text" id="subjekKontak" class="form-control" placeholder="Contoh: Pertanyaan Jadwal Sesi Pelatihan">
+            </div>
+
+            <div class="form-group">
+              <label for="pesanKontak" class="form-label">Pesan Pertanyaan <span class="required">*</span></label>
+              <textarea id="pesanKontak" class="form-control" rows="4" placeholder="Tuliskan pertanyaan Anda secara detail..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-full">Kirim Pesan</button>
+          </form>
+        </div>
+
+        <!-- Info Kontak -->
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <div style="background: var(--color-light-card); padding: 28px; border-radius: var(--radius-lg); border: 1px solid var(--color-light-border);">
+            <h3 style="margin-bottom: 12px;">Sekretariat Pendampingan</h3>
+            <p>Portal Mitra UMKM — Inisiatif Pendampingan Digital Usaha Lokal Indonesia</p>
+            <p style="margin-top: 12px;"><strong>Email:</strong> info@mitraumkm.id</p>
+            <p style="margin-top: 4px;"><strong>WhatsApp Layanan:</strong> 0812-3456-7890</p>
+            <p style="margin-top: 4px;"><strong>Jam Operasional:</strong> Senin - Jumat (08.00 - 17.00 WIB)</p>
+          </div>
+
+          <div style="background: var(--color-light-green); padding: 28px; border-radius: var(--radius-lg);">
+            <h3 style="color: var(--color-forest-green); margin-bottom: 8px;">Butuh Respon Cepat?</h3>
+            <p style="color: var(--color-forest-dark); margin-bottom: 20px;">Hubungi tim pendamping langsung via pesan singkat WhatsApp.</p>
+            <a href="https://wa.me/6281234567890?text=Halo%20Mitra%20UMKM,%20saya%20ingin%20bertanya%20seputar%20program" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Chat via WhatsApp →</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FLOATING BUTTONS -->
+  <button id="backToTopBtn" class="back-to-top-float" aria-label="Kembali ke Atas" title="Kembali ke atas">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <a href="https://wa.me/6281234567890?text=Halo%20Mitra%20UMKM,%20saya%20ingin%20bertanya%20seputar%20kontak" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Hubungi WhatsApp Mitra UMKM">
+    <svg viewBox="0 0 32 32">
+      <path d="M16 2A13.93 13.93 0 0 0 3.82 22.8L2 29.42l6.83-1.79A13.93 13.93 0 1 0 16 2zm0 25.54a11.53 11.53 0 0 1-5.89-1.61l-.42-.25-4.37 1.15 1.17-4.26-.28-.44A11.57 11.57 0 1 1 16 27.54zm6.34-8.66c-.35-.17-2.06-1.02-2.38-1.13s-.55-.17-.79.17-.92 1.13-1.13 1.37-.42.27-.77.1A9.68 9.68 0 0 1 12 16.51a10.66 10.66 0 0 1-2.92-3.64c-.2-.35 0-.54.17-.71s.35-.41.53-.61a2.39 2.39 0 0 0 .35-.58.65.65 0 0 0 0-.62c-.09-.17-.79-1.9-1.08-2.61s-.58-.6-.79-.61h-.68a1.31 1.31 0 0 0-.95.44 3.99 3.99 0 0 0-1.25 2.97 6.94 6.94 0 0 0 1.45 3.68c.18.24 2.5 3.82 6.06 5.36a20.44 20.44 0 0 0 2 .74 4.8 4.8 0 0 0 2.21.14c.68-.1 2.06-.84 2.35-1.65a2.89 2.89 0 0 0 .2-1.65c-.08-.14-.3-.22-.65-.39z"/>
+    </svg>
+  </a>
+
+  <!-- FOOTER UTAMA -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: var(--color-white);">
+            <img src="assets/img/logo.png" alt="Mitra UMKM" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('logoFallbackFooter').style.display='flex';">
+            <div class="brand-logo-fallback" id="logoFallbackFooter">
+              <span class="brand-logo-icon">M</span>
+              <span>mitra umkm</span>
+            </div>
+          </a>
+          <p>Portal pendampingan digital UMKM Indonesia. Tumbuh bersama memperkuat daya saing usaha lokal melalui edukasi bisnis yang terstruktur.</p>
+        </div>
+
+        <div>
+          <h4>Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kategori Program</h4>
+          <ul class="footer-links">
+            <li><a href="program.html?cat=pelatihan">Pelatihan Digital</a></li>
+            <li><a href="program.html?cat=branding">Branding & Konten</a></li>
+            <li><a href="program.html?cat=pemasaran">Pemasaran Online</a></li>
+            <li><a href="program.html?cat=website">Website Bisnis</a></li>
+            <li><a href="program.html?cat=pengembangan">Pengembangan Usaha</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Hubungi Kami</h4>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem;">Sekretariat Pendampingan UMKM</p>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 8px;">Email: info@mitraumkm.id</p>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 4px;">WhatsApp: 0812-3456-7890</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 mitra umkm — Portal Pendampingan Digital UMKM Indonesia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
