@@ -1,0 +1,6 @@
+# Robots.txt for Mitra UMKM
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mitra-umkm.vercel.app/sitemap.xml

@@ -268,4 +268,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+
+  // 9. Blog Share Copy Link Handler
+  const copyLinkBtns = document.querySelectorAll('.share-btn-copy, #copyLinkBtn');
+  copyLinkBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentUrl = window.location.href;
+      navigator.clipboard.writeText(currentUrl).then(() => {
+        const toast = document.getElementById('copyToast');
+        if (toast) {
+          toast.style.display = 'inline-block';
+          setTimeout(() => {
+            toast.style.display = 'none';
+          }, 3000);
+        } else {
+          alert('Tautan artikel berhasil disalin!');
+        }
+      }).catch(() => {
+        alert('Tautan artikel: ' + currentUrl);
+      });
+    });
+  });
 });
+
